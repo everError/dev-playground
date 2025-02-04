@@ -5,7 +5,6 @@
 ## 프로젝트 목록
 
 1. [GraphQL & Apollo](graphql-apollo/README.md)
-2. [Vue.js, TypeScript, TailwindCSS Components](vue-ts-tailwind-components/README.md)
 
 ## 활용 목적
 
