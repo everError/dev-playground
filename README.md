@@ -4,7 +4,8 @@
 
 ## 프로젝트 목록
 
-1. [GraphQL & Apollo](graphql-apollo/README.md)
+1. [GraphQL & Apollo](/graphql-apollo/)
+2. [gRPC](/gRPC/)
 
 ## 활용 목적
 
