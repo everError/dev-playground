@@ -2,8 +2,11 @@ syntax = "proto3";
 
 package hello;
 
+option go_package = "proto/hello";
+
 service HelloService {
   rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc SayHelloStream (HelloRequest) returns (stream HelloReply);
 }
 
 message HelloRequest {
