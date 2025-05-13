@@ -6,6 +6,7 @@
 
 1. [GraphQL & Apollo](/graphql-apollo/)
 2. [gRPC](/gRPC/)
+3. [Zod](/Zod/)
 
 ## 활용 목적
 
