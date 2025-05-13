@@ -101,3 +101,41 @@ if (result.success) {
 } else {
   console.error("❌ 오류:", result.error.format());
 }
+const dateSchema = z.date(); // Date 객체만 허용
+
+console.log(dateSchema.safeParse(new Date())); // ✅
+console.log(dateSchema.safeParse("2023-01-01")); // ❌ (string은 안 됨)
+
+// 문자열 → Date 변환 후 검증
+const dateStringSchema = z.string().transform((val) => new Date(val));
+console.log(dateStringSchema.parse("2023-01-01")); // ✅ Date 객체 반환
+
+// 최소 1개 이상의 문자열을 가진 Set
+const nonEmptySet = z.set(z.string()).nonempty();
+nonEmptySet.parse(new Set(["apple"])); // ✅
+nonEmptySet.parse(new Set()); // ❌ 오류: 최소 1개의 항목이 필요합니다.
+
+// 최소 5개 이상의 항목을 가진 Set
+const minSet = z.set(z.string()).min(5);
+minSet.parse(new Set(["a", "b", "c", "d", "e"])); // ✅
+minSet.parse(new Set(["a", "b"])); // ❌ 오류: 최소 5개의 항목이 필요합니다.
+
+// 최대 5개 이하의 항목을 가진 Set
+const maxSet = z.set(z.string()).max(5);
+maxSet.parse(new Set(["a", "b", "c", "d", "e"])); // ✅
+maxSet.parse(new Set(["a", "b", "c", "d", "e", "f"])); // ❌ 오류: 최대 5개의 항목까지 허용됩니다.
+
+// 정확히 5개의 항목을 가진 Set
+const exactSet = z.set(z.string()).size(5);
+exactSet.parse(new Set(["a", "b", "c", "d", "e"])); // ✅
+exactSet.parse(new Set(["a", "b", "c"])); // ❌ 오류: 정확히 5개의 항목이 필요합니다.
+
+// 키: string, 값: number인 Map
+const stringNumberMap = z.map(z.string(), z.number());
+stringNumberMap.parse(
+  new Map([
+    ["one", 1],
+    ["two", 2],
+  ])
+); // ✅
+stringNumberMap.parse(new Map([["one", "1"]])); // ❌ 오류: 값이 숫자가 아닙니다.
