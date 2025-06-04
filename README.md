@@ -9,6 +9,7 @@
 1. [GraphQL & Apollo](./graphql-apollo)
 2. [gRPC](./gRPC)
 3. [Zod](./Zod)
+4. [용어 및 개념](./concepts/)
 
 ## 🎯 활용 목적
 
