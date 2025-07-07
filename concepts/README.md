@@ -1,3 +1,4 @@
-1. [간단한 용어 및 개념](./dev-terms.md)
-   - Shebang
-2. [TDD](<TDD(Test-Driven%20Development).md>)
+- [간단한 용어 및 개념](./dev-terms.md)
+  - Shebang
+- [TDD](<TDD(Test-Driven%20Development).md>)
+- [암호화/해싱](./Encryption%20Algorithms.md)
