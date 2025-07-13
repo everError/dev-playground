@@ -1,4 +1,7 @@
 - [간단한 용어 및 개념](./dev-terms.md)
   - Shebang
+  - Idempotency (멱등성)
+  - Environment Variables (환경 변수)
+  - Webhook
 - [TDD](<TDD(Test-Driven%20Development).md>)
 - [암호화/해싱](./Encryption%20Algorithms.md)
