@@ -3,5 +3,7 @@
   - Idempotency (멱등성)
   - Environment Variables (환경 변수)
   - Webhook
+  - Hydration
+  - Circuit Breaker
 - [TDD](<TDD(Test-Driven%20Development).md>)
 - [암호화/해싱](./Encryption%20Algorithms.md)
