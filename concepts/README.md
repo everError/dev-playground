@@ -11,3 +11,4 @@
 - [WebAssembly](./WebAssembly.md)
 - [Saga Pattern](./Saga%20Pattern.md)
 - [draw.oi](./draw%20io.md)
+- [Semaphore](./Semaphore.md)
