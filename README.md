@@ -9,6 +9,7 @@
 1. [GraphQL & Apollo](./graphql-apollo)
 2. [gRPC](./gRPC)
 3. [Zod](./Zod)
+4. [tRPC](./tRPC/)
 
 ---
 
