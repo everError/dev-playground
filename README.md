@@ -10,6 +10,7 @@
 2. [gRPC](./gRPC)
 3. [Zod](./Zod)
 4. [tRPC](./tRPC/)
+5. [Tauri](./Tauri/)
 
 ---
 
