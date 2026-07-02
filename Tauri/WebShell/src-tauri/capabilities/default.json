@@ -1,0 +1,18 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["main", "settings"],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "allow-get-config",
+    "allow-save-config",
+    "allow-reset-config",
+    "allow-report-app-origin",
+    "allow-open-settings",
+    "allow-close-settings",
+    "allow-reload-main",
+    "allow-exit-app"
+  ]
+}

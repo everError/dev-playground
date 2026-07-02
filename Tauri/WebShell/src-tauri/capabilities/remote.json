@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "remote-content",
+  "description": "원격 사이트(서버 배포 웹)에 최소 IPC 허용 — 설정 진입(Ctrl+F12), 추후 인쇄 커맨드",
+  "windows": ["main"],
+  "remote": {
+    "urls": ["http://*:*/*", "https://*:*/*"]
+  },
+  "permissions": ["core:default", "allow-open-settings"]
+}

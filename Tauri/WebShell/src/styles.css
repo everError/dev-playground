@@ -1,0 +1,134 @@
+:root {
+  font-family: 'Segoe UI', 'Malgun Gothic', sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(480px, 90vw);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.06);
+}
+
+.container.center {
+  text-align: center;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+}
+
+button.danger {
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.row.actions {
+  justify-content: center;
+}
+
+button {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+button:hover {
+  filter: brightness(0.96);
+}
+
+.error {
+  padding: 10px 12px;
+  margin: 0 0 16px;
+  border-radius: 8px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.hint {
+  margin: 18px 0 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+kbd {
+  padding: 1px 5px;
+  border: 1px solid #d1d5db;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: #f9fafb;
+  font-size: 0.75rem;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 14px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
